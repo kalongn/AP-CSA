@@ -1,0 +1,8 @@
+int k = 1;
+int m = 11;
+int y = 2020;
+int d = (2020%100)-1;
+int c = (y/100);
+double w = (k + ((13*m-1)/5) + d + (d/4) + (c/4) - 2*c)%7; 
+
+System.out.println((int)w);

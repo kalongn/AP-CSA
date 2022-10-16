@@ -1,0 +1,50 @@
+public class BankAccount 
+{
+   private String password;
+   private double balance;
+   private String name;
+   
+   //Empty Constructor Sets password to null and balance to 0.0;
+   public BankAccount();
+   {
+      password = null;
+      balance = 0.0;
+      name = null;
+   }
+   
+   //Two parameter constructor sets password and balance
+   public BankAccount(String pw, double bal)
+   {
+      password = pw;
+      balance = bal;
+   }
+   
+   //deposit adds money to the balance
+   public void deposit(double depositAmount)
+   {
+     balance = balance + depositAmount;
+   }
+   
+   //withdrawal subtracts from the balance
+   public void withdrawal(double withdrawalAmout)
+   { 
+      balance = balance - withdrawalAmount;
+   }
+   
+   public void setName(String nameSet)
+   {
+      name = nameSet
+   }
+   
+   //print Name and balance
+   public void printAccountInfo()
+   {
+      System.out.println(name + ":" + passowrd + ":" + balance);
+   }
+   
+   //make a toString method instead
+   public String toString()
+   {
+       return name + ":" + password + ":" + balance;
+   }
+ }

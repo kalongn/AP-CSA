@@ -1,0 +1,42 @@
+public class PalindromeChecker
+{
+  public static void main(String[] args)
+  {
+    String testString = "ABCDEFG";
+    System.out.println("reverse of " + testString + " is "+reverse(testString));
+      
+  }
+  //returns the input String in reverse order
+  public static String reverse(String input)
+  {
+    int length = input.length();
+    String reverseInput;
+    for( int index = length-1; index >=0; index--)
+    {
+      reverseInput = reverseInput + input.charAt(index);
+    }
+    return reverseInput;
+  }
+  
+  //Checks if the input String is a palindrome
+  public static boolean isPalindrome(String input)
+  {
+     if(reverseInput.equals(input))
+     {
+         return true;
+     }
+     else
+     {
+         return false;
+     }
+  }
+  
+  //removes spaces and puncuation at the end.
+  public static String removeSpacesAndPunctuation(String input)
+  {
+     String noSpace = input.replaceAll("\\s", "");
+     String noNonWord = noSpace.replaceALL("\\W","");
+     return noNonWord;
+  }
+ }
+  

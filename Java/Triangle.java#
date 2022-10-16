@@ -1,0 +1,46 @@
+public class Triangle
+{
+   private Point p1;
+   private Point p2;
+   private Point p3;
+   
+   public Triangle(Point newP1, Point newP2, Point newP3)
+   {
+      p1 = newP1;
+      p2 = newP2;
+      p3 = newP3;
+   }
+   
+   
+   
+   public Point getP1()
+   {
+      return p1;
+   }
+   public Point getP2()
+   {
+      return p2;
+   }
+   public Point getP3()
+   {
+      return p3;
+   }
+   
+   public void setP1(Point newP1)
+   {
+      p1=newP1;
+   }
+   public void setP2(Point newP2)
+   {
+      p2=newP2;
+   }
+   public void setP3(Point newP3)
+   {
+      p3=newP3;
+   }
+   
+   public String toString()
+   {
+      return "(" + p1 + "," + p2 + "," + p3 + ")";
+   }
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class subtractquest
+{
+   public static void main(String[] args)
+   {
+      int first = (int)((Math.random()*10)+1);
+      int second = (int)((Math.random()*10)+1);
+      int answer = first -second;
+      double startTime = System.currentTimeMillis();
+      
+      
+      System.out.println("what is " + first + " - " + second + " ?\n");
+      Scanner temp = new Scanner(System.in);
+      int number = temp.nextInt();
+      
+      while(answer != number)
+      {
+         System.out.println("Wrong guess again? \n");
+         temp = new Scanner(System.in);
+         number = temp.nextInt();
+      }
+      double endTime = System.currentTimeMillis();
+      double testTime = endTime - startTime;
+      System.out.println("You are correct" + "\nTest time is " + testTime / 1000 + " seconds\n");
+    }
+}  
